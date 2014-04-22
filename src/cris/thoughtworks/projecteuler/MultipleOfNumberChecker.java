@@ -5,6 +5,6 @@ package cris.thoughtworks.projecteuler;
  */
 public class MultipleOfNumberChecker {
     public boolean isMultipleOf3(int number) {
-        return true;
+        return (number % 3) == 0;
     }
 }
