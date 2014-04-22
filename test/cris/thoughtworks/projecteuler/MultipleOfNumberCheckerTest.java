@@ -40,4 +40,12 @@ public class MultipleOfNumberCheckerTest {
         assertTrue(isMultipleOf5);
 
     }
+
+    @Test
+    public void shouldReturnFalseWhenNumberIsNotMultipleOf5() {
+
+        boolean isMultipleOf5 = multipleOfNumberChecker.isMultipleOf5(12);
+
+        assertFalse(isMultipleOf5);
+    }
 }

@@ -9,6 +9,6 @@ public class MultipleOfNumberChecker {
     }
 
     public boolean isMultipleOf5(int number) {
-        return true;
+        return (number % 5) == 0;
     }
 }
