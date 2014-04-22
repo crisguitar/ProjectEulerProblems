@@ -7,4 +7,8 @@ public class MultipleOfNumberChecker {
     public boolean isMultipleOf3(int number) {
         return (number % 3) == 0;
     }
+
+    public boolean isMultipleOf5(int number) {
+        return true;
+    }
 }
