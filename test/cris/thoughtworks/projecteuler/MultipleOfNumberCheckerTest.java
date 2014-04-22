@@ -19,7 +19,7 @@ public class MultipleOfNumberCheckerTest {
     @Test
     public void shouldReturnTrueWhenCheckingIfNumberIsMultipleOf3() {
 
-        boolean isMultipleOf3 = multipleOfNumberChecker.isMultipleOf3(6);
+        boolean isMultipleOf3 = multipleOfNumberChecker.numberIsMultipleOf(6, 3);
 
         assertTrue(isMultipleOf3);
     }
@@ -27,7 +27,7 @@ public class MultipleOfNumberCheckerTest {
     @Test
     public void shouldReturnFalseWhenNumberIsNotMultipleOf3() {
 
-        boolean isMultipleOf3 = multipleOfNumberChecker.isMultipleOf3(4);
+        boolean isMultipleOf3 = multipleOfNumberChecker.numberIsMultipleOf(4, 3);
 
         assertFalse(isMultipleOf3);
     }
@@ -35,7 +35,7 @@ public class MultipleOfNumberCheckerTest {
     @Test
     public void shouldReturnTrueWhenCheckingIfNumberIsMultipleOf5() {
 
-        boolean isMultipleOf5 = multipleOfNumberChecker.isMultipleOf5(15);
+        boolean isMultipleOf5 = multipleOfNumberChecker.numberIsMultipleOf(15, 5);
 
         assertTrue(isMultipleOf5);
 
@@ -44,7 +44,7 @@ public class MultipleOfNumberCheckerTest {
     @Test
     public void shouldReturnFalseWhenNumberIsNotMultipleOf5() {
 
-        boolean isMultipleOf5 = multipleOfNumberChecker.isMultipleOf5(12);
+        boolean isMultipleOf5 = multipleOfNumberChecker.numberIsMultipleOf(12, 5);
 
         assertFalse(isMultipleOf5);
     }
