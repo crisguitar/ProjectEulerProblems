@@ -2,6 +2,7 @@ package cris.thoughtworks.projecteuler.app;
 
 import cris.thoughtworks.projecteuler.EvenFibonacci;
 import cris.thoughtworks.projecteuler.MultiplesOf3And5Adder;
+import cris.thoughtworks.projecteuler.SmallestMultiple;
 
 /**
  * Created by cristianpinto on 4/22/14.
@@ -16,7 +17,11 @@ public class Application {
         EvenFibonacci evenFibonacci = new EvenFibonacci();
         int secondResult = evenFibonacci.addEvenFibonacciUpTo(4000000);
 
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        int thirdResult = smallestMultiple.get(20);
+
         System.out.println(firstResult);
         System.out.println(secondResult);
+        System.out.println(thirdResult);
     }
 }

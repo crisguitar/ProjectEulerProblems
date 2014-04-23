@@ -5,13 +5,16 @@ package cris.thoughtworks.projecteuler;
  */
 public class SmallestMultiple {
     public int get(int number) {
-
-        for(int i = 1;i <= number; i++) {
-            if (i % number == 0)
-            {
-                return i;
-            }
+        int smallestMultiple = 0;
+        boolean isSmallestMultiple = false;
+        while (!isSmallestMultiple) {
+            smallestMultiple++;
+            int i = 1;
+            do {
+                isSmallestMultiple = smallestMultiple % i == 0;
+                i++;
+            } while (isSmallestMultiple && i <= number);
         }
-        return 0;
+        return smallestMultiple;
     }
 }

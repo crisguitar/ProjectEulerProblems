@@ -23,4 +23,13 @@ public class SmallestMultipleTest {
 
         assertEquals(2, result);
     }
+
+    @Test
+    public void shouldReturnSixWhenParameterIsThree() {
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+
+        int result = smallestMultiple.get(3);
+
+        assertEquals(6, result);
+    }
 }
