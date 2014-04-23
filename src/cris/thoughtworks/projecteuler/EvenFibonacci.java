@@ -3,11 +3,8 @@ package cris.thoughtworks.projecteuler;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by cristianpinto on 4/22/14.
- */
 public class EvenFibonacci {
-    public boolean checkIfNumberIsEven(int number) {
+    public boolean isNumberEven(int number) {
         return number % 2 == 0;
     }
 
@@ -23,5 +20,16 @@ public class EvenFibonacci {
         }
 
         return fibonacciNumbers;
+    }
+
+    public int addEvenFibonacciUpTo(int limit) {
+        List<Integer> fibonacciNumbers = getFibonacciNumbersWithValueLimit(limit);
+        int result = 0;
+        for (Integer fibonacciNumber : fibonacciNumbers) {
+            if (isNumberEven(fibonacciNumber)) {
+                result += fibonacciNumber;
+            }
+        }
+        return result;
     }
 }

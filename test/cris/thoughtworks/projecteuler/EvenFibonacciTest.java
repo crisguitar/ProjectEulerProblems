@@ -5,19 +5,17 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertArrayEquals;
 
-/**
- * Created by cristianpinto on 4/22/14.
- */
 public class EvenFibonacciTest {
 
     @Test
     public void shouldCheckIfNumberIsEven() {
         EvenFibonacci evenFibonacci = new EvenFibonacci();
 
-        boolean isEven = evenFibonacci.checkIfNumberIsEven(4);
+        boolean isEven = evenFibonacci.isNumberEven(4);
 
         assertTrue(isEven);
     }
@@ -37,4 +35,14 @@ public class EvenFibonacciTest {
 
         assertArrayEquals(expectedNumbers.toArray(), actualNumbers.toArray());
     }
+
+    @Test
+    public void shouldAddEvenFibonacciNumbersWithValueLimit() {
+        EvenFibonacci evenFibonacci = new EvenFibonacci();
+
+        int result = evenFibonacci.addEvenFibonacciUpTo(15);
+
+        assertEquals(10, result);
+    }
+
 }

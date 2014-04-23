@@ -1,5 +1,6 @@
 package cris.thoughtworks.projecteuler.app;
 
+import cris.thoughtworks.projecteuler.EvenFibonacci;
 import cris.thoughtworks.projecteuler.MultiplesOf3And5Adder;
 
 /**
@@ -10,8 +11,12 @@ public class Application {
     public static void main(String ... args) {
 
         MultiplesOf3And5Adder multiplesOf3And5Adder = new MultiplesOf3And5Adder();
-        int result = multiplesOf3And5Adder.addNumbersBelowTo(1000);
+        int firstResult = multiplesOf3And5Adder.addNumbersBelowTo(1000);
 
-        System.out.println(result);
+        EvenFibonacci evenFibonacci = new EvenFibonacci();
+        int secondResult = evenFibonacci.addEvenFibonacciUpTo(4000000);
+
+        System.out.println(firstResult);
+        System.out.println(secondResult);
     }
 }
