@@ -1,1 +1,1 @@
-This are the solutions to the ProjectEuler.net problem
+These are the solutions to the ProjectEuler.net problem
