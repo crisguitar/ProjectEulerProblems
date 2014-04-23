@@ -1,6 +1,7 @@
 package cris.thoughtworks.projecteuler.app;
 
 import cris.thoughtworks.projecteuler.EvenFibonacci;
+import cris.thoughtworks.projecteuler.LargestPrimeFactor;
 import cris.thoughtworks.projecteuler.MultiplesOf3And5Adder;
 import cris.thoughtworks.projecteuler.SmallestMultiple;
 
@@ -20,8 +21,12 @@ public class Application {
         SmallestMultiple smallestMultiple = new SmallestMultiple();
         int thirdResult = smallestMultiple.get(20);
 
+        LargestPrimeFactor largestPrimeFactor = new LargestPrimeFactor();
+        int fourthResult = largestPrimeFactor.getLargestPrimeFactorOf(600851475143L);
+
         System.out.println(firstResult);
         System.out.println(secondResult);
         System.out.println(thirdResult);
+        System.out.println(fourthResult);
     }
 }
