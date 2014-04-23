@@ -1,8 +1,5 @@
 package cris.thoughtworks.projecteuler;
 
-/**
- * Created by cristianpinto on 4/23/14.
- */
 public class SmallestMultiple {
     public int get(int number) {
         int smallestMultiple = 0;
