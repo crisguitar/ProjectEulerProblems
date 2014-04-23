@@ -3,10 +3,8 @@ package cris.thoughtworks.projecteuler;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-/**
- * Created by cristianpinto on 4/23/14.
- */
 public class LargestPrimeFactorTest {
 
     @Test
@@ -18,4 +16,12 @@ public class LargestPrimeFactorTest {
         assertFalse(isPrime);
     }
 
+    @Test
+    public void shouldReturnTrueWhenNumberIsPrime() {
+        LargestPrimeFactor largestPrimeFactor = new LargestPrimeFactor();
+
+        boolean isPrime = largestPrimeFactor.isPrime(7);
+
+        assertTrue(isPrime);
+    }
 }
