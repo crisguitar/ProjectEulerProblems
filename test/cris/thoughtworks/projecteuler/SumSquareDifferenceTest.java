@@ -25,4 +25,14 @@ public class SumSquareDifferenceTest {
 
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void shouldFindSumSquareDifferenceOfNumbersBelowLimit() {
+        SumSquareDifference sumSquareDifference = new SumSquareDifference();
+        int expectedResult = 2640;
+
+        int actualResult = sumSquareDifference.getDifferenceBetweenTheSumOfSquaresOfNaturalNumbersAndTheSquareOfTheSum(10);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }

@@ -16,4 +16,8 @@ public class SumSquareDifference {
         }
         return result * result;
     }
+
+    public int getDifferenceBetweenTheSumOfSquaresOfNaturalNumbersAndTheSquareOfTheSum(int limit) {
+        return getSquareOfTheSumOfNumbersBelowLimit(limit) - getSumOfTheSquareOfNumbersBelowLimit(limit);
+    }
 }
