@@ -10,4 +10,16 @@ public class SummationOfPrimes {
         }
         return true;
     }
+
+    public int findSum(int limit) {
+        int result = 0;
+        int i = 2;
+        while (i < limit) {
+            if (isPrimeNumber(i)) {
+                result += i;
+            }
+            i++;
+        }
+        return result;
+    }
 }
