@@ -10,9 +10,6 @@ public class LargestProduct {
                 largestProduct = temp;
             }
             sequence = sequence.substring(1);
-            if (!keepGoing(sequence)) {
-                return largestProduct;
-            }
         }
         return largestProduct;
     }
@@ -25,7 +22,4 @@ public class LargestProduct {
         return temp;
     }
 
-    public boolean keepGoing(String sequence) {
-        return sequence.length() >= 5;
-    }
 }
